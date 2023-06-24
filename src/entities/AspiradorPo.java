@@ -1,6 +1,6 @@
 package entities;
 
-public class AspiradorPo {
+public class AspiradorPo extends Produto {
     String marca;
     String tipoDeAspirador;
     String capacidadeDoReservatorio;
