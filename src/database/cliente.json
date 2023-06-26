@@ -1,16 +1,18 @@
 [
   {
-    "idCliente": "e8709332-e0a7-43e8-bc0c-4d6cc84f6c77",
-    "nome": "lira",
-    "email": "gabriel@gmail.com",
+    "idCliente": "d82e4cc1-2256-4101-8a08-fc8adffbd8c5",
+    "nome": "gabriel",
+    "email": "gabriel8182@gmail.com",
     "senha": "123",
-    "saldo": 0.0
+    "saldo": 0.0,
+    "tipoCliente": "admin"
   },
   {
-    "idCliente": "9cb88ada-ed90-4f93-8c2d-589762cdaa26",
-    "nome": "guilherme",
-    "email": "gabriel2@gmail.com",
+    "idCliente": "397ec1f5-c895-45ef-a391-ec0cc6182bb4",
+    "nome": "tomas",
+    "email": "tomas@gmail.com",
     "senha": "123",
-    "saldo": 0.0
+    "saldo": 0.0,
+    "tipoCliente": "admin"
   }
 ]

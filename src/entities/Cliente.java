@@ -8,7 +8,9 @@ public class Cliente {
     private String email;
     private String senha;
     private double saldo;
+    private String tipoCliente;
 
+    
     
     public Cliente(String nome, String email, String senha){
         UUID uuid = UUID.randomUUID();
@@ -18,6 +20,15 @@ public class Cliente {
         this.email = email;
         this.senha = senha;
         this.saldo = 0;
+        this.tipoCliente = "Cliente";
+    }
+    
+    public String getTipoCliente() {
+        return tipoCliente;
+    }
+
+    public void setTipoCliente(String tipoCliente) {
+        this.tipoCliente = tipoCliente;
     }
     
     public double getSaldo() {
