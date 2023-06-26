@@ -6,8 +6,8 @@ import entities.Cliente;
 public class TesteCliente {
     public static void main(String[] args) {
         Cliente cliente = new Cliente(
-            "guilherme",
-            "gabriel2@gmail.com",
+            "tomas",
+            "tomas@gmail.com",
             "123"
         );
 
