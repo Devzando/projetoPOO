@@ -1,0 +1,14 @@
+[
+  {
+    "idCompra": "2ad293a4-0706-44d1-b310-94cfc9b57c12",
+    "idCliente": "e8709332-e0a7-43e8-bc0c-4d6cc84f6c77",
+    "idProduto": "2a530a7c-cdd7-4c74-8178-269eba858c19",
+    "dataCompra": {
+      "year": 2023,
+      "month": 6,
+      "day": 25
+    },
+    "quantidade": 1,
+    "valorTotal": 1500.0
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "idCliente": "e8709332-e0a7-43e8-bc0c-4d6cc84f6c77",
+    "dataCompra": {
+      "year": 2023,
+      "month": 6,
+      "day": 25
+    },
+    "quantidade": 1,
+    "valorTotal": 1500.0,
+    "nomeCliente": "lira",
+    "nomeProduto": "nome dhdydh"
+  },
+  {
+    "idCliente": "e8709332-e0a7-43e8-bc0c-4d6cc84f6c77",
+    "dataCompra": {
+      "year": 2023,
+      "month": 6,
+      "day": 25
+    },
+    "quantidade": 1,
+    "valorTotal": 1500.0,
+    "nomeCliente": "lira",
+    "nomeProduto": "nome dhdydh"
+  }
+]
