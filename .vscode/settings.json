@@ -3,6 +3,10 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\Users\\20221ewbj0041\\Documents\\Facul Definitivo\\POO\\javalibs\\gson-2.10.1.jar"
+        "c:\\Users\\20221ewbj0041\\Documents\\Facul Definitivo\\POO\\javalibs\\gson-2.10.1.jar",
+        "c:\\Users\\20221ewbj0041\\Documents\\Facul Definitivo\\POO\\javalibs\\gson-2.10.jar",
+        "c:\\Users\\20221ewbj0041\\Documents\\Facul Definitivo\\POO\\javalibs\\jackson-annotations-2.9.0.jar",
+        "c:\\Users\\20221ewbj0041\\Documents\\Facul Definitivo\\POO\\javalibs\\jackson-core-2.9.5.jar",
+        "c:\\Users\\20221ewbj0041\\Documents\\Facul Definitivo\\POO\\javalibs\\jackson-databind-2.9.5.jar"
     ]
 }
