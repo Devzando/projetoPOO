@@ -14,4 +14,19 @@ public class CompraService {
         String result = compraRepository.buy(compra);
         return result;
     }
+
+    public int executeTotalSalesPerMonth(){
+        int result = compraRepository.totalSalesPerMonth();
+        return result;
+    }
+
+    public String executeGetProductWithMoreOrLessSales(int choose){
+        String result = compraRepository.getProductWithMoreOrLessSales(choose);
+        return result;
+    }
+
+    public String executeGetBetterClient(){
+        String result = compraRepository.getBetterClient();
+        return result;
+    }
 }

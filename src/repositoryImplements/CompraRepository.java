@@ -10,8 +10,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Collections;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -53,9 +52,12 @@ public class CompraRepository implements ICompraContracts {
                             }
 
                             clientes.get(j).setSaldo(clientes.get(j).getSaldo() - compra.getValorTotal());
+                            clientes.get(j).setQuantidadeCompras(clientes.get(j).getQuantidadeCompras() + 1);
                             clienteRepository.update(clientes.get(j), clientes.get(j).getIdCliente());
 
                             produtos.get(i).setEstoque(produtos.get(i).getEstoque() - compra.getQuantidade());
+                            produtos.get(i).setQuantidadeVendida(
+                                    produtos.get(i).getQuantidadeVendida() + compra.getQuantidade());
                             produtoRepository.update(produtos.get(i), produtos.get(i).getIdProduto());
                             generateInvoice(
                                     clientes.get(j).getIdCliente(),
@@ -143,6 +145,62 @@ public class CompraRepository implements ICompraContracts {
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException("Erro ao carregar compras");
+        }
+    }
+
+    public int totalSalesPerMonth() {
+        List<Compra> compras = readAllCompra();
+        int total = 0;
+
+        try {
+            for (int i = 0; i < compras.size(); i++) {
+                if (compras.get(i).getDataCompra().getMonthValue() == LocalDate.now().getMonthValue()) {
+                    total += compras.get(i).getQuantidade();
+                }
+
+                if (i == compras.size() - 1 && total == 0) {
+                    throw new RuntimeException("Nenhuma compra realizada neste mês");
+                }
+            }
+            return total;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Erro ao carregar compras");
+        }
+
+    }
+
+    public String getProductWithMoreOrLessSales(int choose) {
+        List<Produto> produtos = produtoRepository.readAll();
+
+        try {
+            Collections.sort(produtos);
+
+            if (choose == 1) {
+                String nomeProdutoMaior = produtos.get(produtos.size() - 1).getNome();
+                return nomeProdutoMaior;
+            } else {
+                String nomeProdutoMenor = produtos.get(0).getNome();
+                return nomeProdutoMenor;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Erro ao carregar produtos");
+        }
+    }
+
+    public String getBetterClient() {
+        List<Cliente> clientes = clienteRepository.readAll();
+        String nomeCliente = "";
+
+        try {
+            Collections.sort(clientes);
+            nomeCliente = clientes.get(clientes.size() - 1).getNome();
+            return nomeCliente;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Erro ao carregar clientes");
         }
     }
 }

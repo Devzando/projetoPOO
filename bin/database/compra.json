@@ -1,14 +1,62 @@
 [
   {
-    "idCompra": "2ad293a4-0706-44d1-b310-94cfc9b57c12",
-    "idCliente": "e8709332-e0a7-43e8-bc0c-4d6cc84f6c77",
-    "idProduto": "2a530a7c-cdd7-4c74-8178-269eba858c19",
+    "idCompra": "1142948d-d529-40cf-a30f-99826d9ac210",
+    "idCliente": "d82e4cc1-2256-4101-8a08-fc8adffbd8c5",
+    "idProduto": "6677f197-b1eb-4ebd-ba12-0cdeb2615ee5",
     "dataCompra": {
       "year": 2023,
       "month": 6,
-      "day": 25
+      "day": 26
     },
-    "quantidade": 1,
-    "valorTotal": 1500.0
+    "quantidade": 3,
+    "valorTotal": 4500.0
+  },
+  {
+    "idCompra": "b2436c50-a00b-44ea-8033-fa0a586ba512",
+    "idCliente": "d82e4cc1-2256-4101-8a08-fc8adffbd8c5",
+    "idProduto": "cc8f9b2d-f6de-4a1c-a2e8-1c559f69a34c",
+    "dataCompra": {
+      "year": 2023,
+      "month": 6,
+      "day": 26
+    },
+    "quantidade": 4,
+    "valorTotal": 6000.0
+  },
+  {
+    "idCompra": "4e0d2992-62b0-42d6-8189-ca55f6279ffb",
+    "idCliente": "33d33ed3-2554-4626-a922-3250a4fe3213",
+    "idProduto": "cc8f9b2d-f6de-4a1c-a2e8-1c559f69a34c",
+    "dataCompra": {
+      "year": 2023,
+      "month": 6,
+      "day": 26
+    },
+    "quantidade": 4,
+    "valorTotal": 6000.0
+  },
+  {
+    "idCompra": "9cf8fcd6-a4ba-491f-9dbb-3e0401e4f461",
+    "idCliente": "c9df1511-eb2e-49ea-98b2-b7e29c38f702",
+    "idProduto": "cc8f9b2d-f6de-4a1c-a2e8-1c559f69a34c",
+    "dataCompra": {
+      "year": 2023,
+      "month": 6,
+      "day": 26
+    },
+    "quantidade": 6,
+    "valorTotal": 9000.0
+  },
+  {
+    "idCompra": "7d13a02c-7cce-42b4-9777-dbf6f362c208",
+    "idCliente": "c9df1511-eb2e-49ea-98b2-b7e29c38f702",
+    "idProduto": "cc8f9b2d-f6de-4a1c-a2e8-1c559f69a34c",
+    "dataCompra": {
+      "year": 2023,
+      "month": 6,
+      "day": 26
+    },
+    "quantidade": 6,
+    "valorTotal": 9000.0
   }
 ]

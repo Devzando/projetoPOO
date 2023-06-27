@@ -22,5 +22,65 @@
     "valorTotal": 1500.0,
     "nomeCliente": "lira",
     "nomeProduto": "nome dhdydh"
+  },
+  {
+    "idCliente": "d82e4cc1-2256-4101-8a08-fc8adffbd8c5",
+    "dataCompra": {
+      "year": 2023,
+      "month": 6,
+      "day": 26
+    },
+    "quantidade": 3,
+    "valorTotal": 4500.0,
+    "nomeCliente": "gabriel",
+    "nomeProduto": "Televisâo"
+  },
+  {
+    "idCliente": "d82e4cc1-2256-4101-8a08-fc8adffbd8c5",
+    "dataCompra": {
+      "year": 2023,
+      "month": 6,
+      "day": 26
+    },
+    "quantidade": 4,
+    "valorTotal": 6000.0,
+    "nomeCliente": "gabriel",
+    "nomeProduto": "MaquinaLavarRoupa"
+  },
+  {
+    "idCliente": "33d33ed3-2554-4626-a922-3250a4fe3213",
+    "dataCompra": {
+      "year": 2023,
+      "month": 6,
+      "day": 26
+    },
+    "quantidade": 4,
+    "valorTotal": 6000.0,
+    "nomeCliente": "gabriel",
+    "nomeProduto": "MaquinaLavarRoupa"
+  },
+  {
+    "idCliente": "c9df1511-eb2e-49ea-98b2-b7e29c38f702",
+    "dataCompra": {
+      "year": 2023,
+      "month": 6,
+      "day": 26
+    },
+    "quantidade": 6,
+    "valorTotal": 9000.0,
+    "nomeCliente": "tomas",
+    "nomeProduto": "MaquinaLavarRoupa"
+  },
+  {
+    "idCliente": "c9df1511-eb2e-49ea-98b2-b7e29c38f702",
+    "dataCompra": {
+      "year": 2023,
+      "month": 6,
+      "day": 26
+    },
+    "quantidade": 6,
+    "valorTotal": 9000.0,
+    "nomeCliente": "tomas",
+    "nomeProduto": "MaquinaLavarRoupa"
   }
 ]

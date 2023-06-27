@@ -12,7 +12,7 @@ public class TesteProduto {
             "cor djndud", 
             1500, 
             "dimensoes dhdydh",
-            "nome dhdydh",
+            "MaquinaLavarRoupa",
             "consumoDeEnergia dhdydh"
         );
 

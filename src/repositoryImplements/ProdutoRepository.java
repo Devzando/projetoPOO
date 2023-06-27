@@ -65,7 +65,7 @@ public class ProdutoRepository implements IProdutoContracts {
         List<Produto> produtos = readAll();
 
         if (produtos.size() == 0) {
-            return "Não há produtos cadastrados!";
+            throw new RuntimeException("Não há produtos cadastrados!");
         }
 
          for (int i = 0; i < produtos.size(); i++) {
@@ -75,7 +75,7 @@ public class ProdutoRepository implements IProdutoContracts {
             }
 
             if (i == produtos.size() - 1) {
-                return "Produto não encontrado!";
+                throw new RuntimeException("Produto não encontrado!");
             }
         }
 
@@ -95,7 +95,7 @@ public class ProdutoRepository implements IProdutoContracts {
         List<Produto> produtos = readAll();
 
         if (produtos.size() == 0) {
-            return "Não há produtos cadastrados!";
+            throw new RuntimeException("Não há produtos cadastrados!");
         }
 
         for (int i = 0; i < produtos.size(); i++) {
@@ -105,7 +105,7 @@ public class ProdutoRepository implements IProdutoContracts {
             }
 
             if (i == produtos.size() - 1) {
-                return "Produto não encontrado!";
+                throw new RuntimeException("Produto não encontrado!");
             }
         }
         
@@ -119,6 +119,28 @@ public class ProdutoRepository implements IProdutoContracts {
             throw new RuntimeException("Erro ao deletar produto!");
         }
 
+    }
+
+    public Produto read(String idProduto) {
+        List<Produto> produtos = readAll();
+
+        try {
+            if (produtos.size() == 0) {
+                throw new RuntimeException("Não há produtos cadastrados!");
+            }
+    
+            for (Produto produto : produtos) {
+                if (produto.getIdProduto().equals(idProduto)) {
+                    return produto;
+                }
+            }
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Erro ao carregar produto!");
+        }
+
+        return null;
     }
 
 }

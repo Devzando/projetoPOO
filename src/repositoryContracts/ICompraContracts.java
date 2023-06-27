@@ -17,4 +17,7 @@ public interface ICompraContracts {
     ) throws Exception;
     List<Compra> readAllFatura() throws Exception;
     List<Compra> readAllCompra() throws Exception;
+    int totalSalesPerMonth() throws Exception;
+    String getProductWithMoreOrLessSales(int choose) throws Exception;
+    String getBetterClient() throws Exception;
 }

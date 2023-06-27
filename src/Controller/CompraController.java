@@ -14,4 +14,19 @@ public class CompraController {
         String result = this.compraService.executeBuy(compra);
         return result;
     }
+
+    public int handleTotalSalesPerMonth(){
+        int result = this.compraService.executeTotalSalesPerMonth();
+        return result;
+    }
+
+    public String handleGetProductWithMoreOrLessSales(int choose){
+        String result = this.compraService.executeGetProductWithMoreOrLessSales(choose);
+        return result;
+    }
+
+    public String handleGetBetterClient(){
+        String result = this.compraService.executeGetBetterClient();
+        return result;
+    }
 }
