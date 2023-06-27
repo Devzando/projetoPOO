@@ -1,18 +1,20 @@
 [
   {
-    "idCliente": "d82e4cc1-2256-4101-8a08-fc8adffbd8c5",
-    "nome": "gabriel",
-    "email": "gabriel8182@gmail.com",
-    "senha": "123",
-    "saldo": 0.0,
-    "tipoCliente": "admin"
-  },
-  {
-    "idCliente": "397ec1f5-c895-45ef-a391-ec0cc6182bb4",
+    "idCliente": "c9df1511-eb2e-49ea-98b2-b7e29c38f702",
     "nome": "tomas",
     "email": "tomas@gmail.com",
     "senha": "123",
-    "saldo": 0.0,
-    "tipoCliente": "admin"
+    "saldo": 1982000.0,
+    "tipoCliente": "admin",
+    "quantidadeCompras": 2
+  },
+  {
+    "idCliente": "33d33ed3-2554-4626-a922-3250a4fe3213",
+    "nome": "gabriel",
+    "email": "gabriel@gmail.com",
+    "senha": "123",
+    "saldo": 1994000.0,
+    "tipoCliente": "admin",
+    "quantidadeCompras": 1
   }
 ]

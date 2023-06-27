@@ -28,4 +28,8 @@ public class ProdutoService {
         String result = this.produtoRepository.delete(idProduto);
         return result;
     }
+    public Produto executeRead(String idProduto){
+        Produto result = this.produtoRepository.read(idProduto);
+        return result;
+    }
 }

@@ -31,5 +31,10 @@ public class ProdutoController {
         String result = this.produtoService.executeDelete(idProduto);
         return result;
     }
+    
+    public Produto handleReadProduto(String idProduto){
+        Produto result = this.produtoService.executeRead(idProduto);
+        return result;
+    }
 
 }

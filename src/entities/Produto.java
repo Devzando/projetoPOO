@@ -1,7 +1,8 @@
 package entities;
+
 import java.util.UUID;
 
-public class Produto {
+public class Produto implements Comparable<Produto> {
     private String idProduto;
     private String marca;
     private String capacidade;
@@ -11,31 +12,22 @@ public class Produto {
     private double preco;
     private String dimensoes;
     private String consumoDeEnergia;
-
-    public String getConsumoDeEnergia() {
-        return consumoDeEnergia;
-    }
-
-    public void setConsumoDeEnergia(String consumoDeEnergia) {
-        this.consumoDeEnergia = consumoDeEnergia;
-    }
-
+    private int quantidadeVendida;
     private int estoque;
 
-    public Produto(){
-        
+    public Produto() {
+
     }
 
     public Produto(
-        String marca, 
-        String capacidade, 
-        String tipo, 
-        String cor, 
-        double preco, 
-        String dimensoes,
-        String nome,
-        String consumoDeEnergia
-    ){
+            String marca,
+            String capacidade,
+            String tipo,
+            String cor,
+            double preco,
+            String dimensoes,
+            String nome,
+            String consumoDeEnergia) {
         UUID uuid = UUID.randomUUID();
 
         this.idProduto = uuid.toString();
@@ -47,9 +39,25 @@ public class Produto {
         this.dimensoes = dimensoes;
         this.nome = nome;
         this.consumoDeEnergia = consumoDeEnergia;
+        this.quantidadeVendida = 0;
         this.estoque = 20;
     }
 
+    public int getQuantidadeVendida() {
+        return quantidadeVendida;
+    }
+
+    public void setQuantidadeVendida(int quantidadeVendida) {
+        this.quantidadeVendida = quantidadeVendida;
+    }
+
+    public String getConsumoDeEnergia() {
+        return consumoDeEnergia;
+    }
+
+    public void setConsumoDeEnergia(String consumoDeEnergia) {
+        this.consumoDeEnergia = consumoDeEnergia;
+    }
 
     public String getIdProduto() {
         return idProduto;
@@ -117,6 +125,19 @@ public class Produto {
 
     public void setEstoque(int estoque) {
         this.estoque = estoque;
+    }
+
+    @Override
+    public int compareTo(Produto produto) {
+
+        if (this.getQuantidadeVendida() > produto.getQuantidadeVendida()) {
+            return 1;
+        } else if(this.getQuantidadeVendida() < produto.getQuantidadeVendida()) {
+            return -1;
+        } else {
+            return 0;
+        }
+
     }
 
 }

@@ -1,7 +1,5 @@
 package Controller;
 
-import java.util.List;
-
 import entities.Cliente;
 import service.ClienteService;
 

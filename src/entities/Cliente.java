@@ -2,14 +2,16 @@ package entities;
 
 import java.util.UUID;
 
-public class Cliente {
+public class Cliente implements Comparable<Cliente> {
     private String idCliente;
     private String nome;
     private String email;
     private String senha;
     private double saldo;
     private String tipoCliente;
+    private int quantidadeCompras;
 
+    
     
     
     public Cliente(String nome, String email, String senha){
@@ -21,6 +23,15 @@ public class Cliente {
         this.senha = senha;
         this.saldo = 0;
         this.tipoCliente = "Cliente";
+        this.quantidadeCompras = 0;
+    }
+
+    public int getQuantidadeCompras() {
+        return quantidadeCompras;
+    }
+
+    public void setQuantidadeCompras(int quantidadeCompras) {
+        this.quantidadeCompras = quantidadeCompras;
     }
     
     public String getTipoCliente() {
@@ -65,6 +76,17 @@ public class Cliente {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    @Override
+    public int compareTo(Cliente cliente) {
+          if (this.getQuantidadeCompras() > cliente.getQuantidadeCompras()) {
+            return 1;
+        } else if(this.getQuantidadeCompras() < cliente.getQuantidadeCompras()) {
+            return -1;
+        } else {
+            return 0;
+        }
     }
 
 }

@@ -1,14 +1,28 @@
 [
   {
-    "idProduto": "2a530a7c-cdd7-4c74-8178-269eba858c19",
+    "idProduto": "6677f197-b1eb-4ebd-ba12-0cdeb2615ee5",
     "marca": "marca gabriel",
     "capacidade": "capacidade dhhdndh",
     "tipo": "Televisao",
-    "nome": "nome dhdydh",
+    "nome": "Televisâo",
     "cor": "cor djndud",
     "preco": 1500.0,
     "dimensoes": "dimensoes dhdydh",
     "consumoDeEnergia": "consumoDeEnergia dhdydh",
-    "estoque": 11
+    "quantidadeVendida": 3,
+    "estoque": 17
+  },
+  {
+    "idProduto": "cc8f9b2d-f6de-4a1c-a2e8-1c559f69a34c",
+    "marca": "marca gabriel",
+    "capacidade": "capacidade dhhdndh",
+    "tipo": "Televisao",
+    "nome": "MaquinaLavarRoupa",
+    "cor": "cor djndud",
+    "preco": 1500.0,
+    "dimensoes": "dimensoes dhdydh",
+    "consumoDeEnergia": "consumoDeEnergia dhdydh",
+    "quantidadeVendida": 20,
+    "estoque": 0
   }
 ]
