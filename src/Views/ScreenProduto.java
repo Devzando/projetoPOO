@@ -166,6 +166,18 @@ public class ScreenProduto extends JFrame {
 		JButton btnNewButton = new JButton("Comprar");
 		btnNewButton.setBounds(320, 311, 126, 45);
 		contentPane.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("Voltar");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				HomeAdm screenHomeAdmin = new HomeAdm(meuCliente);
+				dispose();
+				screenHomeAdmin.setVisible(true);
+				screenHomeAdmin.setTitle("TechNew (Home)");
+			}
+		});
+		btnNewButton_1.setBounds(10, 11, 89, 23);
+		contentPane.add(btnNewButton_1);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int teste = Integer.parseInt(inputQuantidade.getValue().toString());

@@ -18,11 +18,11 @@
     "quantidadeCompras": 1
   },
   {
-    "idCliente": "d40bd461-7e34-4e22-9353-c2f3a6016b13",
+    "idCliente": "9773e11e-fbb8-4518-bc63-29cb82677431",
     "nome": "ze",
     "email": "ze@gmail.com",
     "senha": "123",
-    "saldo": 0.0,
+    "saldo": 10.0,
     "tipoCliente": "Cliente",
     "quantidadeCompras": 0
   }

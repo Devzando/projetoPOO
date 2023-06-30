@@ -4,7 +4,7 @@
     "marca": "marca gabriel",
     "capacidade": "capacidade dhhdndh",
     "tipo": "Televisao",
-    "nome": "Televis\u00e3o",
+    "nome": "Televisão",
     "cor": "cor djndud",
     "preco": 1500.0,
     "dimensoes": "dimensoes dhdydh",
@@ -23,6 +23,18 @@
     "dimensoes": "dimensoes dhdydh",
     "consumoDeEnergia": "consumoDeEnergia dhdydh",
     "quantidadeVendida": 20,
+    "estoque": 0
+  },
+  {
+    "marca": "LG",
+    "capacidade": "256",
+    "tipo": "Smartphone",
+    "nome": "Celular",
+    "cor": "Preto",
+    "preco": 1500.0,
+    "dimensoes": "12",
+    "consumoDeEnergia": "A",
+    "quantidadeVendida": 0,
     "estoque": 0
   }
 ]

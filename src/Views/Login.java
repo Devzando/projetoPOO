@@ -6,17 +6,23 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.table.DefaultTableModel;
 
 import Controller.ClienteController;
+import Controller.ProdutoController;
 import entities.Cliente;
+import entities.Produto;
 
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
+import javax.swing.JTable;
 
 public class Login extends JFrame {
 
@@ -32,7 +38,7 @@ public class Login extends JFrame {
 			public void run() {
 				try {
 					Login frame = new Login();
-					frame.setTitle("Weijinto - TechNew (Login)");
+					frame.setTitle("TechNew (Login)");
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -40,7 +46,7 @@ public class Login extends JFrame {
 			}
 		});
 	}
-
+	
 	/**
 	 * Create the frame.
 	 */
@@ -63,16 +69,15 @@ public class Login extends JFrame {
 					String senha = String.valueOf(inputSenha.getPassword());
 					Cliente clienteLogin = clienteController.handleLoginCliente(email, senha);
 					if(clienteLogin.getTipoCliente().equals("Cliente")) {
-						System.out.println(clienteLogin.getTipoCliente());
 						HomeCliente screenHomeCliente = new HomeCliente(clienteLogin);
 						dispose();
 						screenHomeCliente.setVisible(true);
-						screenHomeCliente.setTitle("Weijinto - TechNew (Home)");
+						screenHomeCliente.setTitle("TechNew (Home)");
 					} else if (clienteLogin.getTipoCliente().equals("admin")) {
-						HomeAdm screenHomeAdmin = new HomeAdm();
+						HomeAdm screenHomeAdmin = new HomeAdm(clienteLogin);
 						dispose();
 						screenHomeAdmin.setVisible(true);
-						screenHomeAdmin.setTitle("Weijinto - TechNew (Home)");
+						screenHomeAdmin.setTitle("TechNew (Home)");
 					}
 				} catch (Exception ex) {
 					JOptionPane.showMessageDialog(buttonLogin, ex.getMessage());
@@ -88,7 +93,7 @@ public class Login extends JFrame {
 				Cadastro screenCadastro = new Cadastro();
 				dispose();
 				screenCadastro.setVisible(true);
-				screenCadastro.setTitle("Weijinto - TechNew (Cadastro)");
+				screenCadastro.setTitle("TechNew (Cadastro)");
 			}
 		});
 		buttonCadastro.setBounds(175, 222, 86, 19);
@@ -109,7 +114,6 @@ public class Login extends JFrame {
 		contentPane.add(lblNewLabel_2);
 		
 		inputEmail = new JTextField();
-		lblNewLabel_2.setLabelFor(inputEmail);
 		inputEmail.setBounds(151, 113, 148, 17);
 		contentPane.add(inputEmail);
 		inputEmail.setColumns(10);

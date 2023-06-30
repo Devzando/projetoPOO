@@ -141,7 +141,7 @@ public class Cadastro extends JFrame {
 				Login screenLogin = new Login();
 				dispose();
 				screenLogin.setVisible(true);
-				screenLogin.setTitle("Weijinto - TechNew (Login)");
+				screenLogin.setTitle("TechNew (Login)");
 			}
 		});
 		buttonVoltar.setBounds(8, 8, 88, 19);
