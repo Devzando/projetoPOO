@@ -16,5 +16,14 @@
     "saldo": 1994000.0,
     "tipoCliente": "admin",
     "quantidadeCompras": 1
+  },
+  {
+    "idCliente": "d40bd461-7e34-4e22-9353-c2f3a6016b13",
+    "nome": "ze",
+    "email": "ze@gmail.com",
+    "senha": "123",
+    "saldo": 0.0,
+    "tipoCliente": "Cliente",
+    "quantidadeCompras": 0
   }
 ]
